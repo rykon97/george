@@ -153,6 +153,73 @@
   width: 634px;
   margin-bottom: 64px;
 }
+.stories .statistics {
+  float: right;
+  width: 486px;
+  height: 434px;
+  background-color: #FAFAFA;
+  border-radius: 12px;
+  padding: 32px;
+}
+.stories .statistics h4 {
+  color: #90A3BF;
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 22px;
+}
+.stories .statistics .numbers {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+.stories .statistics .numbers .cost {
+  color: #1A202C;
+  font-weight: 700;
+  font-size: 36px;
+  letter-spacing: -0.03em;
+  margin-right: 24px;
+}
+.stories .statistics .numbers .percentage {
+  color: #DB2719;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  font-weight: 700;
+  font-size: 20px;
+  letter-spacing: -0.03em;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 5px;
+}
+.stories .statistics .numbers .percentage .down {
+  color: #DB2719;
+}
+.stories .statistics .numbers .percentage .up {
+  color: #659711;
+  -webkit-transform: rotate(-90deg);
+      -ms-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+.stories .statistics .heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.stories .statistics .heading a {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
 .stories .slider {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -196,7 +263,6 @@
   background-image: url("./img/check.svg");
 }
 body, html {
-  font-family: "Plus Jakarta Sans", sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -206,6 +272,7 @@ body, html {
   -moz-osx-font-smoothing: grayscale;
   letter-spacing: -0.02em;
   line-height: 150%;
+  font-family: "Plus Jakarta Sans", sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6, p {
