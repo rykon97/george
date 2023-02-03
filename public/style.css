@@ -146,6 +146,74 @@
   -webkit-box-shadow: 4px 8px 24px rgba(36, 107, 253, 0.25);
           box-shadow: 4px 8px 24px rgba(36, 107, 253, 0.25);
 }
+.pricing {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  position: relative;
+}
+.pricing h1 {
+  color: #0D121F;
+  margin-bottom: 24px;
+}
+.pricing p {
+  color: #596780;
+  margin-bottom: 64px;
+}
+.pricing .toggle {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 235px;
+  color: #0D121F;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 150%;
+  margin-bottom: 24px;
+  margin-right: 19px;
+}
+.pricing .discount {
+  background-color: #E7DEFE;
+  padding: 4px 12px;
+  border-radius: 30px;
+  color: #0D121F;
+  font-weight: 500;
+  font-size: 14px;
+}
+.pricing .arrow {
+  position: absolute;
+  top: 319px;
+}
+.pricing .plan .name {
+  color: #0D121F;
+  font-weight: 600;
+  font-size: 32px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.pricing .plan .name img {
+  margin-right: 12px;
+}
+.pricing .billing {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 32px;
+}
 .stories h2 {
   margin-bottom: 12px;
 }
