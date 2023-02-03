@@ -1,0 +1,25 @@
+.switch
+    width: 70px
+    border-radius: 30px
+    height: 36px
+    position: relative
+    background-color: #7C5CFC
+    transition-duration: 0.3s
+    &.enabled
+        .button
+            top: 4px
+            right: 4px
+            transition-duration: 0.3s
+    &.disabled
+        transition-duration: 0.3s
+        background-color: #CFCFCF
+        .button
+            transition-duration: 0.3s
+            top: 4px
+            right: 38px
+    .button
+        width: 28px
+        height: 28px
+        background: #ffffff
+        border-radius: 30px
+        position: absolute

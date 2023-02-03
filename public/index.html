@@ -126,5 +126,27 @@
             <p class="cross">Manual data arranging needs a long time because the different months/years are not in the same place.</p> 
         </div>
     </section>
+    
+    <!-- <section class="example">
+        <div class="wrapper">
+            <div class="switch disabled">
+                <div class="button"></div>
+            </div>
+        </div>
+    </section> -->
+
+    <script>
+        document.querySelector('.switch').addEventListener("click", (e) => {
+            if(document.querySelector('.switch').classList.contains('disabled')) {
+                document.querySelector('.switch').classList.remove('disabled');
+                document.querySelector('.switch').classList.add('enabled');
+            }
+            else
+            {
+                document.querySelector('.switch').classList.add('disabled');
+                document.querySelector('.switch').classList.remove('enabled');
+            }
+        });
+    </script>
 </body>
 </html>

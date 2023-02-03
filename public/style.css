@@ -301,4 +301,41 @@ h2 {
   line-height: 30px;
   letter-spacing: -0.02em;
 }
+.switch {
+  width: 70px;
+  border-radius: 30px;
+  height: 36px;
+  position: relative;
+  background-color: #7C5CFC;
+  -webkit-transition-duration: 0.3s;
+       -o-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+.switch.enabled .button {
+  top: 4px;
+  right: 4px;
+  -webkit-transition-duration: 0.3s;
+       -o-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+.switch.disabled {
+  -webkit-transition-duration: 0.3s;
+       -o-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+  background-color: #CFCFCF;
+}
+.switch.disabled .button {
+  -webkit-transition-duration: 0.3s;
+       -o-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+  top: 4px;
+  right: 38px;
+}
+.switch .button {
+  width: 28px;
+  height: 28px;
+  background: #ffffff;
+  border-radius: 30px;
+  position: absolute;
+}
 /*# sourceMappingURL=style.css.map */
