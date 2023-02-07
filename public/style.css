@@ -193,6 +193,10 @@
 }
 .pricing .plan {
   text-align: start;
+  background-color: #F3F5F7;
+  padding: 32px;
+  border-radius: 12px;
+  position: relative;
 }
 .pricing .plan .name {
   color: #0D121F;
@@ -208,19 +212,39 @@
 .pricing .plan .name img {
   margin-right: 12px;
 }
+.pricing .plan .name .popular {
+  background-color: #0D121F;
+  border-radius: 30px;
+  font-weight: 500;
+  font-size: 16px;
+  color: #ffffff;
+  padding: 4px 16px;
+  position: absolute;
+  right: 32px;
+  top: 40px;
+}
 .pricing .plan .perfect {
   margin-bottom: 24px;
 }
-.pricing .plan .price {
+.pricing .plan .rate {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.pricing .plan .rate .price {
   color: #0D121F;
   font-weight: 600;
   font-size: 40px;
 }
-.pricing .plan .month {
+.pricing .plan .rate .month {
   color: #596780;
   font-weight: 500;
   font-size: 18px;
   margin-left: 10px;
+  margin-top: 8px;
 }
 .pricing .plan .description {
   color: #1A202C;
@@ -244,17 +268,24 @@
 .pricing .plan .features img {
   margin-right: 12px;
 }
-.pricing .plan .features .active-feature {
-  color: #0D121F;
+.pricing .plan .features .feature {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
+  background-repeat: no-repeat;
+  padding-left: 36px;
+  margin-bottom: 24px;
 }
-.pricing .plan .features .passive-feature {
+.pricing .plan .features .feature:last-child {
+  margin-bottom: 0;
+}
+.pricing .plan .features .feature.active {
+  background-image: url("./img/tick-circle.svg");
+  color: #0D121F;
+}
+.pricing .plan .features .feature.passive {
+  background-image: url("./img/close-circle.svg");
   color: #596780;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
 }
 .pricing .plan button {
   background-color: #7C5CFC;
@@ -265,6 +296,7 @@
   border-radius: 30px;
   padding: 14px 93px;
   margin-top: 40px;
+  width: 100%;
 }
 .pricing .billing {
   display: -webkit-box;
@@ -273,6 +305,9 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin-top: 32px;
 }
 .stories h2 {

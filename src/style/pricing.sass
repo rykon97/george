@@ -32,6 +32,10 @@
         top: 319px
     .plan
         text-align: start
+        background-color: #F3F5F7
+        padding: 32px
+        border-radius: 12px
+        position: relative
         .name
             color: #0D121F
             font-weight: 600
@@ -40,17 +44,31 @@
             align-items: center
             img
                 margin-right: 12px
+            .popular
+                background-color: #0D121F
+                border-radius: 30px
+                font-weight: 500
+                font-size: 16px
+                color: #ffffff
+                padding: 4px 16px
+                position: absolute
+                right: 32px
+                top: 40px
         .perfect
             margin-bottom: 24px
-        .price
-            color: #0D121F
-            font-weight: 600
-            font-size: 40px
-        .month
-            color: #596780
-            font-weight: 500
-            font-size: 18px
-            margin-left: 10px
+        .rate
+            display: flex
+            align-items: center
+            .price
+                color: #0D121F
+                font-weight: 600
+                font-size: 40px
+            .month
+                color: #596780
+                font-weight: 500
+                font-size: 18px
+                margin-left: 10px
+                margin-top: 8px
         .description
             color: #1A202C
             font-weight: 400
@@ -65,12 +83,19 @@
             flex-direction: column
             img
                 margin-right: 12px
-            .active-feature
-                color: #0D121F
+            .feature
                 display: inline-flex
-            .passive-feature
-                color: #596780
-                display: inline-flex
+                background-repeat: no-repeat
+                padding-left: 36px
+                margin-bottom: 24px
+                &:last-child
+                    margin-bottom: 0
+                &.active
+                    background-image: url('./img/tick-circle.svg')
+                    color: #0D121F
+                &.passive
+                    background-image: url('./img/close-circle.svg')
+                    color: #596780         
         button
             background-color: #7C5CFC
             color: #FFFFFF
@@ -80,9 +105,11 @@
             border-radius: 30px
             padding: 14px 93px
             margin-top: 40px
+            width: 100%
     .billing
         display: flex
         align-items: center
+        justify-content: space-between
         margin-top: 32px
         
             
